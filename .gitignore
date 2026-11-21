@@ -1,0 +1,18 @@
+# Build artifacts and local tooling
+/target/
+/.local/
+/release/
+__pycache__/
+
+# Downloaded reference data and generated indexes
+/release-files/
+/refs/
+/refs-v2/
+
+# Typing results
+/results/
+/results-*/
+/tests/output/
+/tests/output-*/
+/tests/na11995-retest/
+tests/
