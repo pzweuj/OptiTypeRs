@@ -4,7 +4,7 @@ OptiTypeRs calls two-field HLA-A, HLA-B and HLA-C genotypes from single-end or p
 
 ## Downloads
 
-Download and unpack the Linux x86-64 archive (including for WSL) or the Windows x86-64 ZIP from [GitHub Releases](../../releases). Add the unpacked directory to your PATH or run the executable from that directory as `./optitype-rs` on Linux and `.\optitype-rs.exe` in PowerShell.
+Download and unpack the Linux x86-64 archive from [GitHub Releases](../../releases). On Linux or WSL, run `./optitype-rs` from the unpacked directory or add that directory to your PATH.
 
 ```sh
 optitype-rs --version
