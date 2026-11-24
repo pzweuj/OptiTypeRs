@@ -273,19 +273,7 @@ impl<'a> From<&'a solver::Solution> for ModelSummary<'a> {
     fn from(solution: &'a solver::Solution) -> Self {
         let genotype = ["A", "B", "C"]
             .into_iter()
-            .zip(&solution.loci)
-            .map(|(locus, groups)| {
-                let call = groups.first().map(|first| {
-                    let first = first.two_field[0].as_str();
-                    let second = groups
-                        .get(1)
-                        .map_or(first, |group| group.two_field[0].as_str());
-                    let mut pair = [first, second];
-                    pair.sort_unstable();
-                    pair
-                });
-                (locus, call)
-            })
+            .zip(solution.genotype())
             .collect();
         Self {
             genotype,
